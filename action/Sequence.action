@@ -1,0 +1,25 @@
+# Goal
+
+uint8 OPERATION_UNSPECIFIED=0
+uint8 OPERATION_FULL_CYCLE=1
+uint8 OPERATION_PROCEED=2
+uint8 OPERATION_RECEDE=3
+uint8 OPERATION_HOME=4
+uint8 OPERATION_RECOVER=5
+
+uint8 operation
+---
+# Result
+
+bool success
+uint8 final_state
+uint16 error_code
+string failed_actuator
+string reason
+---
+# Feedback
+
+uint8 phase
+float32 progress
+string active_actuator
+string detail
